@@ -13,15 +13,23 @@ setTimeout(function() {
 		var addictedUrl = 'http://www.addic7ed.com/search.php?search='+ showName+ "+" + seasonEpisodeArray[0]+ 'x' + seasonEpisodeArray[1] +'&Submit=Search';
 
 		//var fullDiv = '<div class="tt-wrap"><a class="link" href="'+ seasonEpisodeArray[0] +'">Link</a>'+ seasonEpisodeArray +'</div>';
-		var fullDiv = '<div class="tt-wrap"><a target="_blank" class="torrent" href="'+torrentUrl+'"></a><a target="_blank" class="addicted" href="'+addictedUrl+'"></a></div>';
+		//var fullDiv = '<div class="tt-wrap"><a target="_blank" class="torrent" href="'+torrentUrl+'"></a><a target="_blank" class="addicted" href="'+addictedUrl+'"></a></div>';
 		//console.log(seasonEpisodeArray);
 
 		//console.log(torrentUrl);
 		//console.log(divs[i].getAttribute(['data-season-number']));
 		//console.log(showName);
 
+
+		var fullDiv = document.createElement('div');
+		fullDiv.className = 'tt-wrap';
+		fullDiv.innerHTML = '<a target="_blank" class="torrent" href="'+torrentUrl+'"></a><a target="_blank" class="addicted" href="'+addictedUrl+'"></a>';
+		divs[i].appendChild(fullDiv);
+
+
+
 		
-		divs[i].innerHTML = divs[i].innerHTML + fullDiv;
+		//divs[i].innerHTML = divs[i].innerHTML + fullDiv;
 
 		
 
