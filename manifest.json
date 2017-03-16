@@ -1,0 +1,11 @@
+{
+	"name": "TrakTorrent",
+	"version": "1.0",
+	"description": "Creates and shows ExtraTorrent & Addic7ed links for 'Up next to watch' on Trakt.tv",
+	"content_scripts": [{
+		"css": ["styles.css"],
+		"js": ["content.js"],
+		"matches": ["https://trakt.tv/dashboard"]
+	}],
+	"manifest_version": 2
+}
