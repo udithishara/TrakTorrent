@@ -3,7 +3,7 @@
 
 <br>
 
-Creates and shows ExtraTorrent & Addic7ed links for 'Up next to watch' on Trakt.tv
+Creates and shows 1337x & Addic7ed links for 'Up next to watch' on Trakt.tv
 Saves couple of clicks and less copy pasting when you have to bulk download
 <br>
 ( Works only on trakt.tv/dashboard see the screenshot below to see how it appears on the page )
